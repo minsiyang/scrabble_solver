@@ -49,13 +49,12 @@ Function: .score(), iterate the string array
                     return the total of the scrabble point
 
 |    input      |      output       |
-|     :--:      |       :-- :       |
+|     :--:      |       :--:        |
 |    "a"        |         1         |
 |    "d"        |         2         |
 |    "b"        |         3         |
 |    "af"       |         5         |
 |    "awe"      |         6         |
-|   "face"      |         9         |
 |   "STREET"    |         6         |
 |   " "         |         0         |
 |   null        |         0         |

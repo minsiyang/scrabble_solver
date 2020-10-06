@@ -26,4 +26,11 @@ describe('score', () => {
     const scrabble = new Scrabble('awe');
     expect(scrabble.score()).toBe(6);
   })
+
+  it('returns 6 when passes "STREET" ', () => {
+    const scrabble = new Scrabble('STREET');
+    expect(scrabble.score()).toBe(6);
+  })
+
+  
 })
