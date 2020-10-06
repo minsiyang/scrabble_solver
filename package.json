@@ -1,0 +1,16 @@
+{
+  "name": "scrabble_solver",
+  "version": "1.0.0",
+  "description": "## Requirements Given a word, compute the scrabble score for that word.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.5.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
