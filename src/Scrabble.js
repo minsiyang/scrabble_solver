@@ -12,8 +12,12 @@ class Scrabble {
     }
   }
     score() {
-      let arr = this.string.toUpperCase().split("")
       let total = 0
+      if (this.string === null) {
+        return total
+      }
+
+      let arr = this.string.toUpperCase().split("")
       // console.log(arr) 
       arr.forEach( letter => {
         if (this.data[letter]) {

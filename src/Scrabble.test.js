@@ -36,5 +36,10 @@ describe('score', () => {
     const scrabble = new Scrabble(' ');
     expect(scrabble.score()).toBe(0);
   })
+
+  it('returns 0 when passes null ', () => {
+    const scrabble = new Scrabble(null);
+    expect(scrabble.score()).toBe(0);
+  })
   
 })
