@@ -12,8 +12,13 @@ describe('score', () => {
     expect(scrabble.score()).toBe(2);
   })
 
-  it('returns 2 when passes "b" ', () => {
+  it('returns 3 when passes "b" ', () => {
     const scrabble = new Scrabble('b');
     expect(scrabble.score()).toBe(3);
+  })
+
+  it('returns 5 when passes "af" ', () => {
+    const scrabble = new Scrabble('af');
+    expect(scrabble.score()).toBe(5);
   })
 })

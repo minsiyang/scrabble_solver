@@ -1,11 +1,4 @@
 class Scrabble {
-//   |A, E, I, O, U, L, N, R, S, T	| 1 |
-// |D, G	  | 2  |
-// |B, C, M, P	 | 3 |
-// |F, H, V, W, Y |	4 |
-// |K |	5 |
-// |J, X	 | 8 |
-// |Q, Z  | 10 |
   constructor(string) {
     this.string = string;
     this.data = {
@@ -19,11 +12,17 @@ class Scrabble {
     }
   }
     score() {
-      let key = this.string.toUpperCase()
-    if (this.data[key]) {
-      return this.data[key];
-    } 
-    
+      let arr = this.string.toUpperCase().split("")
+      let key = arr[0]
+      let total = 0
+  
+      // console.log(arr) 
+      if (arr.length === 1 && this.data[key]) {
+        return this.data[key];
+      }  else {
+        total = this.data[arr[0]] + this.data[arr[1]]
+        return total
+      }
   }
 }
 
