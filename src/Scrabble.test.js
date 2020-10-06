@@ -32,5 +32,9 @@ describe('score', () => {
     expect(scrabble.score()).toBe(6);
   })
 
+  it('returns 0 when passes " " ', () => {
+    const scrabble = new Scrabble(' ');
+    expect(scrabble.score()).toBe(0);
+  })
   
 })
