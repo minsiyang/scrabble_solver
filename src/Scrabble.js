@@ -15,12 +15,14 @@ class Scrabble {
       let arr = this.string.toUpperCase().split("")
       let key = arr[0]
       let total = 0
-  
       // console.log(arr) 
       if (arr.length === 1 && this.data[key]) {
         return this.data[key];
-      }  else {
+      }  else if (arr.length === 2) {
         total = this.data[arr[0]] + this.data[arr[1]]
+        return total
+      } else {
+        total = this.data[arr[0]] + this.data[arr[1]] + this.data[arr[2]]
         return total
       }
   }

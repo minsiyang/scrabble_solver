@@ -21,4 +21,9 @@ describe('score', () => {
     const scrabble = new Scrabble('af');
     expect(scrabble.score()).toBe(5);
   })
+
+  it('returns 6 when passes "awe" ', () => {
+    const scrabble = new Scrabble('awe');
+    expect(scrabble.score()).toBe(6);
+  })
 })
