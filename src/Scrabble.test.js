@@ -41,5 +41,10 @@ describe('score', () => {
     const scrabble = new Scrabble(null);
     expect(scrabble.score()).toBe(0);
   })
+
+  it('returns 0 when passes string with special characters ', () => {
+    const scrabble = new Scrabble(" \t\n");
+    expect(scrabble.score()).toBe(0);
+  })
   
 })

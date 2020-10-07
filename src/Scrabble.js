@@ -10,22 +10,26 @@ class Scrabble {
       J: 8, X: 8,
       Q: 10, Z:10
     }
-  }
-    score() {
-      let total = 0
-      if (this.string === null) {
-        return total
-      }
-
-      let arr = this.string.toUpperCase().split("")
-      // console.log(arr) 
+  } 
+    _getTotal(arr) {
+      let sum = 0;
       arr.forEach( letter => {
         if (this.data[letter]) {
-          total += this.data[letter]
+          sum += this.data[letter]
         }
       })
+      return sum;
+    }
+
+    score() {
+      let total = 0
+      if ( this.string === null) {
+        return total;
+      } else {
+      // let arr = this.string.toUpperCase().split('')
+      total = this._getTotal(this.string.toUpperCase().split(''))
+    }
       return total;
- 
   }
 }
 
