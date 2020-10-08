@@ -26,7 +26,6 @@ class Scrabble {
       if ( this.string === null) {
         return total;
       } else {
-      // let arr = this.string.toUpperCase().split('')
       total = this._getTotal(this.string.toUpperCase().split(''))
     }
       return total;
